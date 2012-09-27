@@ -1,0 +1,28 @@
+{
+	"folders":
+	[
+		{
+			"path": "./",
+			"folder_exclude_patterns": ["bin", "obj", "test"],
+			"file_exclude_patterns": ["Emerald.sublime-workspace"]
+		}
+	],
+	"settings":
+	{
+		"sublimegdb_workingdir": "${project_path:bin/Emerald.exe}",
+		"sublimegdb_commandline": "gdb --interpreter=mi bin/Emerald.exe",
+		"sublimeclang_options":
+		[
+			"-If:/PortableApps/CommonFiles/mingw",
+			"-If:/PortableApps/CommonFiles/mingw32/include",
+			"-If:/PortableApps/CommonFiles/mingw32/i686-w64-mingw32",
+			"-If:/PortableApps/CommonFiles/mingw32/i686-w64-mingw32/include",
+			"-If:/PortableApps/CommonFiles/mingw32/include/c++/4.7.2",
+			"-If:/PortableApps/CommonFilesmingw32/include/c++/4.7.2/i686-w64-mingw32"
+		]
+	},
+	"build_systems":
+	{
+		"cmd": ["C:/Temp/mingw32/bin/mingw32-make", "-f", "./Makefile"]
+	}
+}

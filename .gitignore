@@ -1,0 +1,8 @@
+# ignore these folders
+bin
+obj
+test
+
+# ignore these files
+*sublime-workspace
+*~
